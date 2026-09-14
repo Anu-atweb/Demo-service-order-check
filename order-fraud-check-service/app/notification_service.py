@@ -2,8 +2,8 @@ import threading
 
 from .events import event_bus
 
-# ADR-001: hold the confirmation email so the fraud check pipeline has a window
-# to flag/cancel the order before the customer is notified.
+# ADR-001: hold the confirmation email so the fraud check pipeline 
+# Allow for this 5 min delay befoe sending order confirmation
 CONFIRMATION_EMAIL_DELAY_SECONDS = 5 * 60
 
 
